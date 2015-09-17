@@ -100,14 +100,6 @@ Car.prototype.move = function() {
 
 	}
 
-	//左右の支点（タイヤ）は、再計算させるほどに小数点の切り上げによって座標がずれる。
-	//困らない時もあるけど方向転換の操作（左右どちらかのタイヤを固定した）のときは
-	//中心がずれることになるので固定にした方がよい。
-
-	//もしかしたら普通の回転の時も同じことが起こっているのかも。
-
-	//スピード（移動量）を大きくするとずれは目立たなくなる
-
 	this.leftWheelX = this.x+this.cosCenterFar[(90+this.angle)%360];
 	this.leftWheelY = this.y-this.sinCenterFar[(90+this.angle)%360];
 	this.rightWheelX = this.x+this.cosCenterFar[(270+this.angle)%360];
