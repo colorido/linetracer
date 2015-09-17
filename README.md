@@ -1,3 +1,3 @@
 # linetracer
-ライントレースをするゲームみたいなものをjavascriptで作った 
+ライントレースをするゲームみたいなものをjavascriptで作った(br)
 firefoxで動かしてください
