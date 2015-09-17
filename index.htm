@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/car.js"></script>
+	<script type="text/javascript" src="js/canvas.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+	<script type="text/javascript" src="js/compiler.js"></script>
+</head>
+
+<body onload="init();">
+	<div id="wrap">
+
+		<nav>
+			<ul>
+				<li><h1>LINETRACER</h1></li>
+			</ul>
+		</nav>
+		
+		<div id="content">
+			<div id="course">
+				<canvas id="background" width="700" height="500"></canvas>
+				<canvas id="foreground" width="700" height="500"></canvas>
+			</div>
+
+			<div class="prog">
+				<div id="codetab" class="tab">
+					<form name="form">
+						<textarea id="codingscreen" wrap="off" spellcheck="false"></textarea>
+					</form>
+				</div>
+				<div id="debugtab" class="tab"></div>
+			</div>
+
+			<p class="btn" id="run-btn" ><a href="#" onclick="progRun();">じっこう</a></p>
+			<p class="btn" id="res-btn"><a href="#" onclick="progRes();">やり直し</a></p>
+
+			<script type="text/javascript">
+				changeTab('codetab');
+			</script>
+
+		</div>
+
+	</div>
+</body>
+
+</html>
